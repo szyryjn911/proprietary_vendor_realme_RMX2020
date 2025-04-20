@@ -339,7 +339,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.0-service.rc \
     vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
     vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
-    vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
     vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
     vendor/realme/RMX2020/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
@@ -433,7 +432,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.dfps@1.0-impl \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.5-impl \
     vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
@@ -973,7 +971,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.aee@1.0-service \
     vendor.mediatek.hardware.dfps@1.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.5-service \
     vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor.mediatek.hardware.nvram@1.1-service \

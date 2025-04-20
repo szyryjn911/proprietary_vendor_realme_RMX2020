@@ -919,56 +919,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.keymaster_attestation@1.1-impl",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libhardware",
-                "vendor.mediatek.hardware.keymaster_attestation@1.0",
-                "vendor.mediatek.hardware.keymaster_attestation@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libhardware",
-                "vendor.mediatek.hardware.keymaster_attestation@1.0",
-                "vendor.mediatek.hardware.keymaster_attestation@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mms@1.5-impl",
     owner: "realme",
     strip: {
@@ -22160,39 +22110,6 @@ cc_prebuilt_binary {
                 "libc",
                 "libgralloc_extra",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.mediatek.hardware.keymaster_attestation@1.1-service",
-    owner: "realme",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.mediatek.hardware.keymaster_attestation@1.1",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
