@@ -4891,11 +4891,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libnvram.so"],
-			shared_libs: ["libcutils", "libcustom_nvram", "libnvram_platform", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libcustom_nvram", "libnvram_platform", "libbase", "libbase_shim", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnvram.so"],
-			shared_libs: ["libcutils", "libcustom_nvram", "libnvram_platform", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libcustom_nvram", "libnvram_platform", "libbase", "libbase_shim", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -5290,11 +5290,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libsysenv.so"],
-			shared_libs: ["liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libbase", "libbase_shim", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsysenv.so"],
-			shared_libs: ["liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libbase", "libbase_shim", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
