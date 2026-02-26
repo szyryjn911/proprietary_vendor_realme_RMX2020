@@ -477,7 +477,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libakm \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_bokeh_api \
@@ -724,7 +723,6 @@ PRODUCT_PACKAGES += \
     pascali_qtech_main_ov13b10_IdxMgr \
     pascali_qtech_main_ov13b10_tuning \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
     vendor.mediatek.hardware.camera.camdump@1.0 \
@@ -755,8 +753,6 @@ PRODUCT_PACKAGES += \
     victor_s5k3p9sp_mipi_raw_IdxMgr \
     victor_s5k3p9sp_mipi_raw_tuning \
     audio.primary.mt6768 \
-    audio.r_submix.mt6768 \
-    audio.usb.mt6768 \
     libDR \
     libHEVCdec_sa.ca7.android \
     libMtkOmxAdpcmDec \
@@ -890,7 +886,6 @@ PRODUCT_PACKAGES += \
     libsensor_custom \
     libudf \
     libutils-v30 \
-    libwifi-hal-mtk \
     libwifitest \
     libwvhidl \
     libwvdrmengine \
