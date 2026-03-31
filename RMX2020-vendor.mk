@@ -110,6 +110,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX2020/proprietary/odm/etc/audio/oplus_audio_features.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/oplus_audio_features.xml \
     vendor/realme/RMX2020/proprietary/odm/etc/audio/test_path/common/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/test_path/common/mixer_paths.xml \
     vendor/realme/RMX2020/proprietary/odm/etc/audio/test_path/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/test_path/mixer_paths.xml \
+    vendor/realme/RMX2020/proprietary/odm/etc/init/camerasloganserver.rc:$(TARGET_COPY_OUT_ODM)/etc/init/camerasloganserver.rc \
     vendor/realme/RMX2020/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/RMX2020/proprietary/odm/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin \
     vendor/realme/RMX2020/proprietary/odm/vendor/app/mcRegistry/030b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030b0000000000000000000000000000.tlbin \
@@ -266,6 +267,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX2020/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/realme/RMX2020/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/realme/RMX2020/proprietary/vendor/etc/aurisys_param/Speech_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_param/Speech_AudioParam.xml \
+    vendor/realme/RMX2020/proprietary/vendor/etc/camera/Arc_wdc_calib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Arc_wdc_calib.bin \
+    vendor/realme/RMX2020/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model \
     vendor/realme/RMX2020/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/realme/RMX2020/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/realme/RMX2020/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -904,7 +907,6 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
-    vendor.oplus.hardware.camera.slogan@1.0 \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -925,6 +927,7 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix_G5.default \
     fingerprint.goodix_G6.default \
     fingerprint.silead.default \
+    vendor.oplus.hardware.camera.slogan@1.0-impl \
     libRbsFlow \
     libRbsFlow_cap \
     libgf_hal_G2 \
@@ -937,6 +940,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.biometrics.fingerprint@2.1_odm \
     vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
+    vendor.oplus.hardware.camera.slogan@1.0 \
     vendor.oplus.hardware.commondcs@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
@@ -947,6 +951,7 @@ PRODUCT_PACKAGES += \
     oplus_appradio_device_manifest.xml \
     oplus_radio_device_manifest.xml \
     vendor.mediatek.hardware.gpu@1.0-service.xml \
+    manifest_oplus_camera_slogan.xml \
     autobt \
     bip \
     ccci_fsd \
@@ -1061,6 +1066,7 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     vtservice \
+    camerasloganserver \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 
 PRODUCT_PACKAGES += \

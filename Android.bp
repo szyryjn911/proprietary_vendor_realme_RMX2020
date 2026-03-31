@@ -19828,49 +19828,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.camera.slogan@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.oplus.hardware.camera.slogan@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.oplus.hardware.camera.slogan@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcomutils",
     owner: "realme",
     strip: {
@@ -20638,6 +20595,62 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.camera.slogan@1.0-impl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/hw/vendor.oplus.hardware.camera.slogan@1.0-impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libcamera_metadata",
+                "libhidlbase",
+                "libhidltransport",
+                "libion",
+                "libion_mtk",
+                "vendor.oplus.hardware.camera.slogan@1.0",
+                "libmtkcam_stdutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/vendor.oplus.hardware.camera.slogan@1.0-impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libcamera_metadata",
+                "libhidlbase",
+                "libhidltransport",
+                "libion",
+                "libion_mtk",
+                "vendor.oplus.hardware.camera.slogan@1.0",
+                "libmtkcam_stdutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libRbsFlow",
     owner: "realme",
     strip: {
@@ -21201,6 +21214,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.camera.slogan@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/vendor.oplus.hardware.camera.slogan@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.camera.slogan@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.commondcs@1.0",
     owner: "realme",
     strip: {
@@ -21427,6 +21483,15 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_camera_slogan.xml",
+    owner: "realme",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_camera_slogan.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -23695,6 +23760,41 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "camerasloganserver",
+    owner: "realme",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/camerasloganserver",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libmtkcam_stdutils",
+                "libmtkcam_ulog",
+                "vendor.oplus.hardware.camera.slogan@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
 }
 
 cc_prebuilt_binary {
