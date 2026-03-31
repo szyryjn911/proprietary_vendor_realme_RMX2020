@@ -21992,43 +21992,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.sensors@2.0-service-mediatek",
-    owner: "realme",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libhwbinder",
-                "libbase",
-                "libutils",
-                "libhidlbase",
-                "libhidltransport",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "libfmq",
-                "libpower",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "camerahalserver",
     owner: "realme",
     target: {
