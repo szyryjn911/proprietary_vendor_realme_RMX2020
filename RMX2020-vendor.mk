@@ -454,7 +454,6 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libMtkOmxCore \
-    libMtkSpeechEnh \
     libNoFpsActor \
     libOpenCL \
     libPolarrRender \
@@ -469,10 +468,7 @@ PRODUCT_PACKAGES += \
     libTEECommon \
     libVDPostureDetection \
     libWaterMark \
-    lib_aurisys_lvimfs \
     lib_bsscore \
-    lib_iir \
-    lib_speech_enh \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -484,9 +480,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_dualcam_refocus_preview \
     libarcsoft_dualcam_refocus_right \
     libarcsoft_lensstaindetection \
-    libaurisysdemo \
-    libbessound_hd_mtk_vendor \
-    libblisrc32_vendor \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
@@ -541,7 +534,6 @@ PRODUCT_PACKAGES += \
     libcurl_xcap_md \
     libcustom_nvram \
     libcvface_api \
-    libcvsd_mtk \
     libdpframework \
     libeffecthal.base \
     libfeature.face \
@@ -576,25 +568,14 @@ PRODUCT_PACKAGES += \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libktvdrc \
-    libktveffect \
-    libktveffect_rec \
-    libktveq \
-    libktvns \
-    libktvreverb \
-    libktvsoundtouch \
-    libktvvolume \
     libladder \
     liblpcnr \
-    liblvimfs \
-    liblvimfs_wrapper \
     libmemsic \
     libmfllcore \
     libminiui \
     libmmprofile \
     libmnetlink_v104 \
     libmpbase \
-    libmsbc_mtk \
     libmsnr \
     libmtcloader \
     libmtk_drvb \
@@ -638,11 +619,9 @@ PRODUCT_PACKAGES += \
     libmtkcutils \
     libmtkhardware_legacy \
     libmtkisp_metadata \
-    libmtklimiter_vendor \
     libmtknetutils \
     libmtkproperty \
     libmtkrillog \
-    libmtkshifter_vendor \
     libmtksysutils \
     libnvram \
     libnvram_daemon_callback \
@@ -656,8 +635,6 @@ PRODUCT_PACKAGES += \
     libpq_prot \
     librgbwlightsensor \
     libsimaka \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
     libssl-ss \
     libstagefrighthw \
     libstereoinfoaccessor_vsdof \
@@ -763,6 +740,10 @@ PRODUCT_PACKAGES += \
     libMtkOmxVdecEx \
     libMtkOmxVenc \
     libMtkOmxWmaDec \
+    libMtkSpeechEnh \
+    lib_aurisys_lvimfs \
+    lib_iir \
+    lib_speech_enh \
     libalsautils-mtk \
     libaudio_engineer_test \
     libaudio_param_parser-vnd \
@@ -776,16 +757,35 @@ PRODUCT_PACKAGES += \
     libaudioloudc \
     libaudioprimarydevicehalifclient \
     libaudiotoolkit_vendor \
+    libaurisysdemo \
+    libbessound_hd_mtk_vendor \
+    libblisrc32_vendor \
+    libcvsd_mtk \
     libfgauge_gm30 \
     libh264dec_customize \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
+    libktvdrc \
+    libktveffect \
+    libktveffect_rec \
+    libktveq \
+    libktvns \
+    libktvreverb \
+    libktvsoundtouch \
+    libktvvolume \
+    liblvimfs \
+    liblvimfs_wrapper \
     libmnl \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
+    libmsbc_mtk \
+    libmtklimiter_vendor \
+    libmtkshifter_vendor \
     liboplus_audio_config \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
     libstorage_otp \
     libthermalalgo \
     libtinyxml \
