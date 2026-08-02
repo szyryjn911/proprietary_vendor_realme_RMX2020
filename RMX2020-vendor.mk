@@ -771,7 +771,7 @@ PRODUCT_PACKAGES += \
     libktvvolume \
     liblvimfs \
     liblvimfs_wrapper \
-    libmnl \
+    libmnl-mtk \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
     libmsbc_mtk \
