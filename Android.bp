@@ -7,7 +7,6 @@ soong_namespace {
         "device/realme/RMX2020",
         "hardware/mediatek",
         "hardware/mediatek/libmtkperf_client",
-        "hardware/mediatek/libaedv",
     ],
 }
 
@@ -2779,6 +2778,51 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaedv",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaedv.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libunwindstack",
+                "liblog",
+                "libz",
+                "libc",
+                "libdl",
+                "libm",
+                "libc++",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaedv.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libunwindstack",
+                "liblog",
+                "libz",
+                "libc",
+                "libdl",
+                "libm",
+                "libc++",
             ],
         },
     },

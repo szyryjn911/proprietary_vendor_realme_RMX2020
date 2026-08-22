@@ -466,6 +466,7 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_mtk \
     libaalservice \
+    libaedv \
     libakm \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_bokeh_api \
