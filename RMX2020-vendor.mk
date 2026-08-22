@@ -466,7 +466,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libakm \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_bokeh_api \
@@ -562,7 +561,6 @@ PRODUCT_PACKAGES += \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libladder \
     liblpcnr \
     libmemsic \
     libmfllcore \
