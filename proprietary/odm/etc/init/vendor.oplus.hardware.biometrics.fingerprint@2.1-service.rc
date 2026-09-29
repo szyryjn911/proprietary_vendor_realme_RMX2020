@@ -10,6 +10,8 @@ on boot
 
 # For egis fp
     chown system system /dev/esfp0
+    chmod 0666 /dev/esfp0
+
     chmod 0660 /sys/bus/platform/devices/egis_input/navigation_enable
     chmod 0660 /sys/bus/platform/devices/egis_input/navigation_event
     chown system  system /sys/bus/platform/devices/egis_input/navigation_enable
