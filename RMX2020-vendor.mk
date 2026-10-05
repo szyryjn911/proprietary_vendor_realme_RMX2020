@@ -635,7 +635,6 @@ PRODUCT_PACKAGES += \
     libtflite_mtk \
     libtflite_mtk_static_R \
     libthha \
-    libutils-v30 \
     libutinterface_custom_md \
     libutinterface_md \
     libvcodec_oal \
